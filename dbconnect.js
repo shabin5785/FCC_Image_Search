@@ -3,7 +3,7 @@ const bluebird = require('bluebird');
 const mai = require('mongoose-auto-increment');
 
 mongoose.promise = bluebird;
-mongoose.connect("mongodb://localhost:27017/freecodecamp");
+mongoose.connect("mongodb://shabin5785:2plus2@ds157439.mlab.com:57439/shabin_mongo");
 
 let connection = mongoose.connection;
 mai.initialize(connection);
